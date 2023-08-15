@@ -1,1 +1,76 @@
-
+@use "../base/variable" as v;
+.header {
+  padding: 15px 0;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .logo {
+    margin: 0 28px 0 0;
+    width: 136px;
+    &-image {
+      width: 100%;
+    }
+  }
+  .g-nav {
+    &__list {
+      display: flex;
+      gap: 0 28px;
+    }
+    &__item {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+  }
+  .contact {
+    display: flex;
+    margin: 0 0 0 auto;
+    &__detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      &-openclose {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: v.$mainColor;
+      }
+      &-tel {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 10px 0 0;
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+      &-icon {
+        margin: 0 5px 0 0;
+        width: 10px;
+      }
+    }
+    &__action {
+      display: flex;
+      gap: 0 10px;
+      margin: 0 0 0 23px;
+      &-btn {
+        padding: 18px 0;
+        width: 142px;
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        &.request {
+          background: v.$accentColor;
+        }
+        &.inquiry {
+          background: v.$mainColor;
+        }
+      }
+    }
+  }
+}
