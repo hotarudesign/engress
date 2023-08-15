@@ -1,4 +1,8 @@
 @charset 'UTF-8';
 
+@use "../base/variable" as v;
 @use "../util/header";
+@use "../template/parts/home/mv";
+@use "../template/parts/home/question";
+@use "../template/parts/home/feature";
 @use "../util/footer";

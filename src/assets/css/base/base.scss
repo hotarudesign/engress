@@ -9,12 +9,18 @@ img {
   height: auto;
 }
 body {
-  font-family: v.$fontNoto;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   letter-spacing: 0.1em;
   color: #333;
 }
 .inner {
-  max-width: 1280px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 40px;
+}
+.sec-ttl {
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-align: center;
+  color: v.$mainColor;
 }
