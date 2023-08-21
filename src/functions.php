@@ -2,6 +2,7 @@
 
 // 分割したファイルパスを配列に追加
 $function_files = [
+    '/functions/file.php',
     '/functions/init.php',
     '/functions/pagination.php',
     '/functions/thumbnail.php',

@@ -1,0 +1,40 @@
+@use "../../../base/variable" as v;
+.flow {
+  padding: 58px 0 37.5px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    margin: 53px 0 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    position: relative;
+    &-ttl {
+      padding: 20px 85px 20px 20px;
+      width: 280px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: v.$mainColor;
+      border-right: 1px solid #ccc;
+    }
+    &-desc {
+      padding: 20px 0 20px 53px;
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: v.$mainColor;
+    }
+    &-num {
+      width: 64px;
+      height: 64px;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 64px;
+      text-align: center;
+      background: v.$accentColor;
+      color: #fff;
+    }
+  }
+}

@@ -26,3 +26,14 @@ body {
   text-align: center;
   color: #1b224c;
 }
+
+.page-sec-ttl {
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-align: center;
+  color: #1b224c;
+}
+
+.page-container {
+  padding: 58px 0 45px;
+}

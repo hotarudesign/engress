@@ -1,7 +1,74 @@
+@use "../base/variable" as v;
 .footer {
+  background: v.$mainColor;
+  color: #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 40px 70px;
+  }
   .f-nav {
     &__list {
       display: flex;
+      gap: 0 43px;
+    }
+    &__item {
+      font-weight: 700;
+      font-size: 1.6rem;
+      position: relative;
+      &:not(:last-child) {
+        &:before {
+          content: "";
+          width: 0.5px;
+          height: 23px;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          right: -21.5px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  &__company {
+    &-logo {
+      display: inline-block;
+      padding: 14px 0 13px;
+      width: 197px;
+      height: 58px;
+      text-align: center;
+      background: #fff;
+      img {
+        width: 159px;
+      }
+    }
+    &-tel {
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 27px 0 0;
+      font-weight: 700;
+      font-size: 1.6rem;
+      img {
+        margin: 0 7px 0 0;
+        width: 10px;
+      }
+    }
+    &-openclose {
+      display: flex;
+      justify-content: flex-end;
+      margin: 13px 0 0;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+  &__copy {
+    padding: 12px 0;
+    text-align: right;
+    background: #fff;
+    &-txt {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: v.$mainColor;
     }
   }
 }

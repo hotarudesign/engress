@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header__inner">
             <h1 class="logo">
-                <a href="">
+                <a href="<?php echo esc_url(home_url('')); ?>">
                     <img src='<?php echo ImgPath; ?>/webp/logo.webp' class="logo-image" alt='Engress'>
                 </a>
             </h1>
@@ -36,8 +36,8 @@
                     </p>
                 </div>
                 <div class="contact__action">
-                    <a href="" class="contact__action-btn request">資料請求</a>
-                    <a href="" class="contact__action-btn inquiry">お問い合わせ</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contact__action-btn request">資料請求</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contact__action-btn inquiry">お問い合わせ</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+
+@use "../base/variable" as v;
+@use "../util/header";
+@use "../util/page-head";
+@use "../util/breadcrumbs";
+@use "../util/cta";
+@use "../util/footer";
+
+.news {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0 0;
+  }
+  &__item {
+    padding: 23px 0 24px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: v.$mainColor;
+    border-top: 1px solid #ccc;
+    &-link {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      gap: 0 50px;
+    }
+    &:last-child {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+.nav-links {
+  margin: 65px 0 0;
+  .page-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    li {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: 500;
+      font-size: 1.6rem;
+      border: 1px solid v.$mainColor;
+      span {
+        width: 100%;
+        background: #fff;
+        &.current {
+          background: v.$mainColor;
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+  }
+}

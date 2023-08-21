@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+
+@use "../base/variable" as v;
+@use "../util/header";
+@use "../util/page-head";
+@use "../util/breadcrumbs";
+@use "../util/cta";
+@use "../util/footer";
+
+.contact {
+  &__inner {
+    max-width: 780px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.68;
+    color: v.$mainColor;
+  }
+}
+.mw_wp_form {
+  padding: 40px 0 0;
+  .label {
+    &.radio {
+      margin: 0 0 20px 0;
+    }
+  }
+  .link {
+    color: v.$accentColor;
+    text-decoration: underline;
+  }
+  .form {
+    &__item {
+      &:not(:first-child) {
+        margin: 20px 0 0;
+      }
+      &.center {
+        text-align: center;
+      }
+    }
+    &__company,
+    &__name,
+    &__email,
+    &__tel,
+    &__message {
+      margin: 12px 0 0;
+      padding: 14px 20px;
+      width: 100%;
+      border: 0.5px solid v.$mainColor !important;
+      &::placeholder {
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+    &__agreement {
+      &-wrap {
+        margin: 20px 0 0;
+      }
+    }
+    &__submit {
+      display: block;
+      margin: 64px auto 0;
+      padding: 16px 0 18px;
+      width: 200px;
+      font-weight: 700;
+      font-size: 1.6rem;
+      text-align: center;
+      background: v.$mainColor;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}

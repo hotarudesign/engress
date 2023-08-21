@@ -5,6 +5,7 @@
   background: #fff;
   position: fixed;
   top: 0;
+  z-index: 10;
   &__inner {
     display: flex;
     align-items: center;
@@ -25,6 +26,7 @@
     &__item {
       font-weight: 700;
       font-size: 1.6rem;
+      color: v.$mainColor;
     }
   }
   .contact {

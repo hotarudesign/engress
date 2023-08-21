@@ -1,0 +1,32 @@
+@use "../base/variable" as v;
+
+.page-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0;
+  height: calc(35vh - 82px);
+  &.price {
+    background: url(../../images/webp/page-head_price.webp) no-repeat
+      center/cover;
+  }
+  &.blog,
+  &.blog-post {
+    background: url(../../images/webp/page-head_blog.webp) no-repeat
+      center/cover;
+  }
+  &.news,
+  &.news-post {
+    background: url(../../images/webp/page-head_news.webp) no-repeat
+      center/cover;
+  }
+  &.contact {
+    background: url(../../images/webp/page-head_contact.webp) no-repeat
+      center/cover;
+  }
+  &__ttl {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #fff;
+  }
+}
