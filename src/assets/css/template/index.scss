@@ -5,4 +5,9 @@
 @use "../template/parts/home/mv";
 @use "../template/parts/home/question";
 @use "../template/parts/home/feature";
+@use "../template/parts/home/success";
+@use "../template/parts/home/flow";
+@use "../template/parts/home/faq";
+@use "../template/parts/home/sidebar-front";
+@use "../util/cta";
 @use "../util/footer";

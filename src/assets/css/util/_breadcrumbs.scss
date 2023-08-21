@@ -1,0 +1,16 @@
+@use "../base/variable" as v;
+
+.breadcrumbs {
+  padding: 19px 0;
+  background: #f8f8f8;
+  &__inner {
+  }
+  span {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: v.$mainColor;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

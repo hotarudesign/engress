@@ -1,0 +1,52 @@
+@use "../base/variable" as v;
+.cta {
+  &__inner {
+    padding: 70px 0 41px;
+    background: url(../../images/webp/cta_bg.webp) no-repeat center/cover;
+    text-align: center;
+  }
+  &__ttl {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #f8f8f8;
+  }
+  &__btn {
+    display: block;
+    margin: 16px auto 22px;
+    padding: 22px 0;
+    width: 280px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background: v.$accentColor;
+    color: #fff;
+    border-radius: 30px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: underline;
+  }
+  &__foot {
+    padding: 20px 0 23px 60px;
+    background: #fff;
+    color: v.$mainColor;
+    &__call {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 1.6rem;
+      vertical-align: bottom;
+      &-num {
+        padding: 0 0 0 20px;
+        font-size: 3.6rem;
+      }
+    }
+    &__openclose {
+      display: inline-block;
+      padding: 0 0 0 20px;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 1.68;
+    }
+  }
+}

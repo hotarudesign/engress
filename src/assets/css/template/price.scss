@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+@use "../base/variable" as v;
+@use "../util/header";
+@use "../util/page-head";
+@use "../util/breadcrumbs";
+@use "../template/parts/price/fee";
+@use "../template/parts/price/course";
+@use "../util/cta";
+@use "../util/footer";
