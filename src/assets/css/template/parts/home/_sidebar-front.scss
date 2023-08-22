@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     gap: 0 65px;
+    @include v.md {
+      flex-direction: column;
+      gap: 40px 0;
+    }
   }
   &__ttl {
     font-weight: 700;
@@ -61,6 +65,9 @@
         gap: 16px 0;
         width: 260px;
         color: v.$mainColor;
+        @include v.md {
+          width: 100%;
+        }
       }
       &-date {
         font-weight: 500;
@@ -88,6 +95,9 @@
       cursor: pointer;
       opacity: 1;
       transition: opacity 0.5s;
+      @include v.md {
+        max-width: 100%;
+      }
       &:hover,
       &:focus {
         opacity: 0.7;

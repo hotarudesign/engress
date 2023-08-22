@@ -10,8 +10,22 @@
     justify-content: space-between;
     gap: 0 30px;
     margin: 137px 0 0;
+    @include v.lg {
+      gap: 0 2%;
+    }
+    @include v.md {
+      flex-direction: column;
+      gap: 30px 0;
+      margin: 60px 0 0;
+    }
   }
   &__item {
+    @include v.lg {
+      width: calc((100% - 4%) / 3);
+    }
+    @include v.md {
+      width: 100%;
+    }
     &-ttl {
       font-weight: 700;
       font-size: 1.6rem;
@@ -48,6 +62,9 @@
         display: flex;
         justify-content: space-between;
         gap: 0 8px;
+        @include v.md {
+          justify-content: flex-start;
+        }
       }
       &-category,
       &-name,

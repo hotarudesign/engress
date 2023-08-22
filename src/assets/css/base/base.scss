@@ -17,12 +17,18 @@ body {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 40px;
+  @include v.lg {
+    padding: 0 4%;
+  }
 }
 .sec-ttl {
   font-weight: 700;
   font-size: 3.6rem;
   text-align: center;
   color: v.$mainColor;
+  @include v.md {
+    font-size: 2.6rem;
+  }
 }
 .page-sec-ttl {
   font-weight: 700;
@@ -32,4 +38,10 @@ body {
 }
 .page-container {
   padding: 58px 0 45px;
+}
+.md-less {
+  display: block;
+  @include v.md {
+    display: none;
+  }
 }

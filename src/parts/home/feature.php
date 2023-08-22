@@ -5,7 +5,7 @@
             <li class="feature__item">
                 <div class="feature__body">
                     <div class="feature__body__txt">
-                        <h3 class="feature__body__txt-ttl">TOEFLに最適化された<br>無駄のないカリキュラム</h3>
+                        <h3 class="feature__body__txt-ttl">TOEFLに最適化された<br class="md-less">無駄のないカリキュラム</h3>
                         <p class="feature__body__txt-desc">TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
                     </div>
                     <p class="feature__body-label">特長 １</p>
@@ -20,7 +20,7 @@
             <li class="feature__item">
                 <div class="feature__body">
                     <div class="feature__body__txt">
-                        <h3 class="feature__body__txt-ttl">日本人指導歴10年以上の<br>経験豊富な講師陣</h3>
+                        <h3 class="feature__body__txt-ttl">日本人指導歴10年以上の<br class="md-less">経験豊富な講師陣</h3>
                         <p class="feature__body__txt-desc">Engressの講師陣は、もともと日本人向けにTOEFLを教えていた人が大多数です。また全メンバーがTESOL(英語教授法)を取得しており、知識と経験を兼ね備えている教育のプロフェッショナルです。</p>
                     </div>
                     <p class="feature__body-label">特長 ２</p>

@@ -11,12 +11,24 @@
     display: flex;
     justify-content: space-between;
     gap: 0 5%;
+    @include v.md {
+      gap: 0 2%;
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
     &__thumb {
       max-width: 350px;
       width: 100%;
+      @include v.md {
+        max-width: 250px;
+      }
+      img {
+        @include v.md {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
   &__body {
@@ -32,6 +44,10 @@
         font-weight: 700;
         font-size: 2.6rem;
         line-height: 1.5;
+        @include v.md {
+          margin: 2rem 0 0;
+          font-size: 1.8rem;
+        }
       }
       &-desc {
         margin: 20px 0 0;
@@ -39,9 +55,15 @@
         font-size: 1.6rem;
         line-height: 1.68;
         letter-spacing: -0.04em;
+        @include v.md {
+          margin: 10px 0 0;
+        }
       }
       &03 {
         margin: 35px 0 0;
+        @include v.md {
+          margin: 0;
+        }
       }
     }
     &-label {

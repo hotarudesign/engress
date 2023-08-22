@@ -12,19 +12,29 @@
     align-items: center;
     background: #f8f8f8;
     position: relative;
+    @include v.lg {
+      display: block;
+    }
     &-ttl {
-      padding: 20px 85px 20px 20px;
-      width: 280px;
+      padding: 20px;
+      width: 230px;
       font-weight: 700;
       font-size: 1.8rem;
       color: v.$mainColor;
       border-right: 1px solid #ccc;
+      @include v.lg {
+        display: inline-block;
+        border-right: none;
+      }
     }
     &-desc {
-      padding: 20px 0 20px 53px;
+      padding: 20px 20px 20px 53px;
       font-weight: 500;
       font-size: 1.6rem;
       color: v.$mainColor;
+      @include v.lg {
+        padding: 20px 20px 20px 90px;
+      }
     }
     &-num {
       width: 64px;
@@ -35,6 +45,10 @@
       text-align: center;
       background: v.$accentColor;
       color: #fff;
+      @include v.lg {
+        display: inline-block;
+        margin: 0 auto auto 0;
+      }
     }
   }
 }
