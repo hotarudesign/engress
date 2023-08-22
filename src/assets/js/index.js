@@ -16,3 +16,12 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const toggleBtn = document.getElementById("jsBtn");
+const jsMenu = document.getElementById("slideMenu");
+
+toggleBtn.addEventListener("click", (e) => {
+  e.preventDefault;
+  toggleBtn.classList.toggle("is-active");
+  jsMenu.classList.toggle("is-show");
+});

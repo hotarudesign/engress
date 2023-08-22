@@ -35,6 +35,29 @@
                         <img src="<?php echo ImgPath; ?>/icon_tel.svg" class="contact__detail-icon" alt="">
                     </p>
                 </div>
+                <div class="contact__action" id="jsContact">
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contact__action-btn request">資料請求</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contact__action-btn inquiry">お問い合わせ</a>
+                </div>
+            </div>
+            <button class="js-btn" id="jsBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="slide-menu" id="slideMenu">
+                <a href="<?php echo esc_url(home_url('')); ?>" class="slide-menu__logo">
+                    <img src='<?php echo ImgPath; ?>/webp/logo.webp' class="logo-image" alt='Engress'>
+                </a>
+                <nav class="g-nav">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'g-nav',
+                            'container' => '',
+                            'menu_class' => 'g-nav__list',
+                        )
+                    );
+                    ?>
+                </nav>
                 <div class="contact__action">
                     <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contact__action-btn request">資料請求</a>
                     <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contact__action-btn inquiry">お問い合わせ</a>

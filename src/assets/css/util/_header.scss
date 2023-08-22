@@ -6,6 +6,9 @@
   position: fixed;
   top: 0;
   z-index: 10;
+  @include v.xl {
+    overflow-x: hidden;
+  }
   &__inner {
     display: flex;
     align-items: center;
@@ -19,6 +22,9 @@
     }
   }
   .g-nav {
+    @include v.lg {
+      display: none;
+    }
     &__list {
       display: flex;
       gap: 0 28px;
@@ -27,6 +33,59 @@
       font-weight: 700;
       font-size: 1.6rem;
       color: v.$mainColor;
+    }
+  }
+  .slide-menu {
+    display: none;
+    @include v.lg {
+      display: flex;
+      flex-direction: column;
+      padding: 10% 0;
+      width: 100vw;
+      height: 100vh;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      right: -100vw;
+      transition: ease-in 0.5s;
+      z-index: 15;
+    }
+    &.is-show {
+      right: 0;
+      transition: ease-in 0.5s;
+    }
+    &__logo {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
+    .g-nav {
+      @include v.lg {
+        display: block;
+        margin: auto 0;
+        width: 100%;
+        &__list {
+          @include v.lg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px 0;
+          }
+        }
+        &__item {
+          font-size: 2rem;
+        }
+      }
+    }
+    .contact__action {
+      @include v.lg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 20px;
+        margin: auto;
+      }
     }
   }
   .contact {
@@ -58,6 +117,9 @@
       display: flex;
       gap: 0 10px;
       margin: 0 0 0 23px;
+      @include v.lg {
+        display: none;
+      }
       &-btn {
         padding: 18px 0;
         width: 142px;
@@ -71,6 +133,57 @@
         }
         &.inquiry {
           background: v.$mainColor;
+        }
+      }
+    }
+  }
+  .js-btn {
+    display: none;
+    @include v.lg {
+      display: block;
+      margin-left: 5%;
+      width: 25px;
+      height: 20px;
+      position: relative;
+      z-index: 20;
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      height: 1.5px;
+      background: #ccc;
+      position: absolute;
+      left: 0;
+      &:nth-child(1) {
+        top: 0;
+        transition: all 0.5s;
+      }
+      &:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        transition: all 0.5s;
+      }
+    }
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+          transition: all 0.5s;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+        &:nth-child(3) {
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+          transition: all 0.5s;
         }
       }
     }
